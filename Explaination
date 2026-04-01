@@ -1,0 +1,8 @@
+What failed?
+CI failed because pytest collected 0 tests (collected 0 items), so the job exited with code 5.
+
+Why was merge blocked?
+The PR had a required status check (CI / test) with conclusion FAILURE, so branch protection blocked merge.
+
+What did you change to pass?
+Renamed test.py to test_main.py to match pytest discovery pattern (test_*.py), then pushed, so tests are now detected and CI / test can pass.
